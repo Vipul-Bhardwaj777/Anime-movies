@@ -6,20 +6,20 @@ const animeDB = {
   Top3_Movies: [
     { name: "Your name", imdb: "8.4" },
     { name: "I want to eat your pancreas", imdb: "8" },
-    { name: "A silent voice", imdb: "8.2" }
+    { name: "A silent voice", imdb: "8.2" },
   ],
 
   Top3_Underratedmovies: [
     { name: "Perfect blue", imdb: "8" },
     { name: "A wisker away", imdb: "6.7" },
-    { name: "Jose, the Tiger and Fish", imdb: "7.6" }
+    { name: "Jose, the Tiger and Fish", imdb: "7.6" },
   ],
 
   Top3_Series: [
     { name: "Your lie in April", imdb: "8.6" },
     { name: "Death Note", imdb: "8.5" },
-    { name: "Jujutsu Kaisen", imdb: "8.5" }
-  ]
+    { name: "Jujutsu Kaisen", imdb: "8.5" },
+  ],
 };
 
 const topButtons = Object.keys(animeDB);
@@ -62,6 +62,27 @@ export default function App() {
           </li>
         </ul>
       ))}
+
+      <ul>
+        <li className="list">
+          <a className="link" href="https://github.com/Vipul-Bhardwaj777">
+            Github
+          </a>
+        </li>
+        <li className="list">
+          <a className="link" href="https://twitter.com/Vipul__777">
+            Twitter
+          </a>
+        </li>
+        <li className="list">
+          <a
+            className="link"
+            href="https://www.linkedin.com/in/vipul-bhardwaj-444888207/"
+          >
+            Linkdin
+          </a>
+        </li>
+      </ul>
     </div>
   );
 }

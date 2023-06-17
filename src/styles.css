@@ -46,4 +46,17 @@ body {
 
 .link {
   text-decoration: none;
+  color: white;
+}
+
+.list {
+  display: inline;
+  padding: 0.5em;
+  border: 1px solid white;
+  margin: 2em 1em;
+  border-radius: 10px;
+}
+
+.list:hover {
+  background-color: #a855f7;
 }

@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+.App {
+  font-family: "bangers", sans-serif;
+  text-align: center;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  padding: 2em;
+}
+
+body {
+  background: linear-gradient(#a855f7, black);
+  background-image: url("https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen.jpg");
+  height: 100vh;
+  width: 100vw;
+}
+
+.top-btn {
+  padding: 0.5em 1em;
+  margin: 1em 0.5em;
+  border-radius: 8px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: white;
+  font-weight: bold;
+  font-size: medium;
+  font-family: inherit;
+}
+.top-btn:hover {
+  background-color: #a855f7;
+}
+
+.anime-list {
+  border: 1px solid white;
+  padding: 1em 1em;
+  border-radius: 10px;
+  width: 60%;
+  color: white;
+  cursor: pointer;
+  background-color: #a855f7;
+}
+.anime-list:hover {
+  background-color: black;
+}
+
+.link {
+  text-decoration: none;
+}

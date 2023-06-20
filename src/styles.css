@@ -7,13 +7,13 @@
   margin: auto;
   text-align: left;
   padding: 2em;
+  /* background-image: url("https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen.jpg"); */
+  display: flex;
+  flex-direction: column;
 }
 
 body {
-  background: linear-gradient(#a855f7, black);
-  background-image: url("https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen.jpg");
-  height: 100vh;
-  width: 100vw;
+  background: linear-gradient(#a855f7, #32efdf);
 }
 
 .top-btn {
@@ -38,7 +38,7 @@ body {
   width: 60%;
   color: white;
   cursor: pointer;
-  background-color: #a855f7;
+  font-size: small;
 }
 .anime-list:hover {
   background-color: black;
@@ -46,17 +46,24 @@ body {
 
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .list {
   display: inline;
   padding: 0.5em;
   border: 1px solid white;
-  margin: 2em 1em;
+  margin-right: 1em;
   border-radius: 10px;
+  font-size: small;
+  background-color: white;
 }
 
 .list:hover {
   background-color: #a855f7;
+}
+
+footer ul {
+  margin-top: 2em;
+  padding-inline-start: 0px;
 }

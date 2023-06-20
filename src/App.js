@@ -33,56 +33,60 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>🍿animemovies</h1>
-      <p style={{ textAlign: "left", color: "white", fontSize: "large" }}>
-        Can't watch long animes? Here's a list of anime movies which are shorter
-        than the anime series.
-      </p>
+      <main>
+        <h1>🍿animemovies</h1>
+        <p style={{ textAlign: "left", color: "black", fontSize: "large" }}>
+          Can't watch long animes? Here's a list of anime movies which are
+          shorter than the anime series.
+        </p>
 
-      <div>
-        {topButtons.map((clickbtns) => (
-          <button onClick={() => clickHandler(clickbtns)} className="top-btn">
-            {clickbtns}
-          </button>
+        <div>
+          {topButtons.map((clickbtns) => (
+            <button onClick={() => clickHandler(clickbtns)} className="top-btn">
+              {clickbtns}
+            </button>
+          ))}
+        </div>
+        <hr />
+
+        {animeDB[animeList].map((anime) => (
+          <ul style={{ listStyle: "none", textAlign: "left", padding: "0" }}>
+            <li className="anime-list">
+              <a className="link" href="https://sanji.to/">
+                <div style={{ fontSize: "x-large", color: "white" }}>
+                  {anime.name}
+                </div>
+                <div style={{ fontSize: "smaller", color: "white" }}>
+                  IMDB rating: {anime.imdb}/10
+                </div>
+              </a>
+            </li>
+          </ul>
         ))}
-      </div>
-      <hr />
+      </main>
 
-      {animeDB[animeList].map((anime) => (
-        <ul style={{ listStyle: "none", textAlign: "left", padding: "0" }}>
-          <li className="anime-list">
-            <a className="link" href="https://sanji.to/">
-              <div style={{ fontSize: "x-large", color: "white" }}>
-                {anime.name}
-              </div>
-              <div style={{ fontSize: "smaller", color: "white" }}>
-                IMDB rating: {anime.imdb}/10
-              </div>
+      <footer>
+        <ul>
+          <li className="list">
+            <a className="link" href="https://github.com/Vipul-Bhardwaj777">
+              Github
+            </a>
+          </li>
+          <li className="list">
+            <a className="link" href="https://twitter.com/Vipul__777">
+              Twitter
+            </a>
+          </li>
+          <li className="list">
+            <a
+              className="link"
+              href="https://www.linkedin.com/in/vipul-bhardwaj-444888207/"
+            >
+              Linkdin
             </a>
           </li>
         </ul>
-      ))}
-
-      <ul>
-        <li className="list">
-          <a className="link" href="https://github.com/Vipul-Bhardwaj777">
-            Github
-          </a>
-        </li>
-        <li className="list">
-          <a className="link" href="https://twitter.com/Vipul__777">
-            Twitter
-          </a>
-        </li>
-        <li className="list">
-          <a
-            className="link"
-            href="https://www.linkedin.com/in/vipul-bhardwaj-444888207/"
-          >
-            Linkdin
-          </a>
-        </li>
-      </ul>
+      </footer>
     </div>
   );
 }
